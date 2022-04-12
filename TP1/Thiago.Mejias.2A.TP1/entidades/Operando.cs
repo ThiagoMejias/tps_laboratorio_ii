@@ -20,19 +20,35 @@ namespace entidades
                 this.numero = ValidarOperando(value);
             }
         }
+        /// <summary>
+        /// inicializa un objeto de tipo Operando con el valor pasado por parametro
+        /// </summary>
+        /// <param name="numero">recibe entero para inicializar</param>
         public Operando(double numero)
         {
             this.numero = numero;
         }
+        /// <summary>
+        /// inicializa un objeto de tipo Operando en 0
+        /// </summary>
         public Operando() : this(0)
         {
 
         }
+        /// <summary>
+        /// inicializa un objeto de tipo Operando con el valor pasado por parametro
+        /// </summary>
+        /// <param name="strNumero">string para inicializar</param>
         public Operando(string strNumero)
         {
             this.Numero = strNumero;
         }
 
+        /// <summary>
+        /// comprueba que el valor recibido sea numérico.
+        /// </summary>
+        /// <param name="valor">valor a validar</param>
+        /// <returns> retorna el valor en formato double. Caso contrario, retornará 0.</returns>
         private double ValidarOperando(string valor)
         {
             double retorno;
@@ -43,6 +59,11 @@ namespace entidades
             }
             return retorno;
         }
+        /// <summary>
+        /// comprueba si el valor recibido es o no binario.
+        /// </summary>
+        /// <param name="cadena">valor a validar</param>
+        /// <returns>retorna true si se pudo o false si no</returns>
 
         private bool EsBinario(string cadena)
         {
@@ -59,7 +80,11 @@ namespace entidades
             return retorno;
         }
 
-
+        /// <summary>
+        /// trasnforma si se puede el valor recibido de binario a decimal
+        /// </summary>
+        /// <param name="valor"></param>
+        /// <returns>retorna el valor transformado o "valor invalido"</returns>
 
         public string BinarioDecimal(string valor)
         {
@@ -86,7 +111,11 @@ namespace entidades
             return retorno;
 
         }
-
+        /// <summary>
+        /// transforma si se puede de decimal a binario.
+        /// </summary>
+        /// <param name="valorstr"></param>
+        /// <returns>true si se puede o "valor invalido" si no</returns>
         public string DecimalABinario(string valorstr)
         {
             string retorno = "";
@@ -108,6 +137,15 @@ namespace entidades
 
 
             return retorno;
+        }
+        /// <summary>
+        /// transforma si se puede de decimal a binario.
+        /// </summary>
+        /// <param name="numero"></param>
+        /// <returns> true si se puede o "valor invalido" si no</returns>
+        public string DecimalABinario(double numero)
+        {
+            return DecimalABinario(numero.ToString());
         }
 
         public static double operator +(Operando uno, Operando dos)

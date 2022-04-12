@@ -46,7 +46,7 @@ namespace MiCalculadora
             this.btnOperar.Location = new System.Drawing.Point(12, 123);
             this.btnOperar.Name = "btnOperar";
             this.btnOperar.Size = new System.Drawing.Size(139, 38);
-            this.btnOperar.TabIndex = 0;
+            this.btnOperar.TabIndex = 3;
             this.btnOperar.Text = "Operar";
             this.btnOperar.UseVisualStyleBackColor = true;
             this.btnOperar.Click += new System.EventHandler(this.btnOperar_Click);
@@ -56,7 +56,7 @@ namespace MiCalculadora
             this.btnLimpiar.Location = new System.Drawing.Point(157, 123);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(142, 38);
-            this.btnLimpiar.TabIndex = 1;
+            this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -66,7 +66,7 @@ namespace MiCalculadora
             this.btnCerrar.Location = new System.Drawing.Point(305, 123);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(142, 38);
-            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.TabIndex = 5;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -76,7 +76,7 @@ namespace MiCalculadora
             this.btnConvertirABinario.Location = new System.Drawing.Point(12, 186);
             this.btnConvertirABinario.Name = "btnConvertirABinario";
             this.btnConvertirABinario.Size = new System.Drawing.Size(213, 42);
-            this.btnConvertirABinario.TabIndex = 3;
+            this.btnConvertirABinario.TabIndex = 6;
             this.btnConvertirABinario.Text = "Convertir a Binario";
             this.btnConvertirABinario.UseVisualStyleBackColor = true;
             this.btnConvertirABinario.Click += new System.EventHandler(this.btnConvertirABinario_Click);
@@ -86,7 +86,7 @@ namespace MiCalculadora
             this.btnConvertirADecimal.Location = new System.Drawing.Point(232, 186);
             this.btnConvertirADecimal.Name = "btnConvertirADecimal";
             this.btnConvertirADecimal.Size = new System.Drawing.Size(215, 42);
-            this.btnConvertirADecimal.TabIndex = 4;
+            this.btnConvertirADecimal.TabIndex = 7;
             this.btnConvertirADecimal.Text = "Convertir a Decimal";
             this.btnConvertirADecimal.UseVisualStyleBackColor = true;
             this.btnConvertirADecimal.Click += new System.EventHandler(this.btnConvertirADecimal_Click);
@@ -97,7 +97,8 @@ namespace MiCalculadora
             this.txtNumero1.Multiline = true;
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(139, 39);
-            this.txtNumero1.TabIndex = 5;
+            this.txtNumero1.TabIndex = 0;
+
             // 
             // txtNumero2
             // 
@@ -105,17 +106,18 @@ namespace MiCalculadora
             this.txtNumero2.Multiline = true;
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(142, 39);
-            this.txtNumero2.TabIndex = 6;
+            this.txtNumero2.TabIndex = 2;
             // 
             // cmbOperador
             // 
+            this.cmbOperador.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperador.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cmbOperador.FormattingEnabled = true;
             this.cmbOperador.Location = new System.Drawing.Point(190, 58);
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(82, 38);
-            this.cmbOperador.TabIndex = 7;
-            this.cmbOperador.SelectedIndexChanged += new System.EventHandler(this.cmbOperador_SelectedIndexChanged);
+            this.cmbOperador.TabIndex = 1;
+
             // 
             // lstOperaciones
             // 
@@ -124,7 +126,8 @@ namespace MiCalculadora
             this.lstOperaciones.Location = new System.Drawing.Point(453, 14);
             this.lstOperaciones.Name = "lstOperaciones";
             this.lstOperaciones.Size = new System.Drawing.Size(137, 214);
-            this.lstOperaciones.TabIndex = 8;
+            this.lstOperaciones.TabIndex = 10;
+            this.lstOperaciones.TabStop = false;
             // 
             // lblResultado
             // 
