@@ -67,8 +67,17 @@ namespace MiCalculadora
                 operador = "+";
             }
             resultado = Operar(txtNumero1.Text, txtNumero2.Text, operador);
-            lblResultado.Text = resultado.ToString();
-            lstOperaciones.Items.Add(validarNumero(txtNumero1.Text) + operador + validarNumero(txtNumero2.Text) + "=" + resultado);
+            if (resultado == double.MinValue)
+            {
+                lstOperaciones.Items.Add("No se puede dividir por 0");
+                lblResultado.Text = ("No se puede dividir por 0");
+            }
+            else
+            {
+                lblResultado.Text = resultado.ToString();
+                lstOperaciones.Items.Add(validarNumero(txtNumero1.Text) + operador + validarNumero(txtNumero2.Text) + "=" + resultado);
+
+            }
         }
         /// <summary>
         /// valida si es un double
@@ -142,7 +151,7 @@ namespace MiCalculadora
             txtNumero1.Text = "";
             txtNumero2.Text = "";
             cmbOperador.Text = "";
-            lstOperaciones.Items.Clear();
+
         }
         /// <summary>
         /// recibe los datos y llamar al metodo operar 

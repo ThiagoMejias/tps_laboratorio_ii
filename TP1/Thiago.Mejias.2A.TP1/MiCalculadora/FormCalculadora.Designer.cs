@@ -93,19 +93,18 @@ namespace MiCalculadora
             // 
             // txtNumero1
             // 
+            this.txtNumero1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNumero1.Location = new System.Drawing.Point(12, 57);
-            this.txtNumero1.Multiline = true;
             this.txtNumero1.Name = "txtNumero1";
-            this.txtNumero1.Size = new System.Drawing.Size(139, 39);
+            this.txtNumero1.Size = new System.Drawing.Size(139, 43);
             this.txtNumero1.TabIndex = 0;
-
             // 
             // txtNumero2
             // 
+            this.txtNumero2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNumero2.Location = new System.Drawing.Point(305, 57);
-            this.txtNumero2.Multiline = true;
             this.txtNumero2.Name = "txtNumero2";
-            this.txtNumero2.Size = new System.Drawing.Size(142, 39);
+            this.txtNumero2.Size = new System.Drawing.Size(142, 43);
             this.txtNumero2.TabIndex = 2;
             // 
             // cmbOperador
@@ -117,7 +116,6 @@ namespace MiCalculadora
             this.cmbOperador.Name = "cmbOperador";
             this.cmbOperador.Size = new System.Drawing.Size(82, 38);
             this.cmbOperador.TabIndex = 1;
-
             // 
             // lstOperaciones
             // 
