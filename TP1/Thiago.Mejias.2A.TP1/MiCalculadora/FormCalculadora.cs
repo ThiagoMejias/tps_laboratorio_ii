@@ -62,7 +62,7 @@ namespace MiCalculadora
         {
             double resultado;
             string operador = cmbOperador.Text;
-            if (string.IsNullOrEmpty(operador))
+            if (operador == " ")
             {
                 operador = "+";
             }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "entidades", "entidades\entidades.csproj", "{3752E18D-4218-4029-823C-872CBA764436}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "entidades\Entidades.csproj", "{3752E18D-4218-4029-823C-872CBA764436}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiCalculadora", "MiCalculadora\MiCalculadora.csproj", "{A680C6E0-DE95-482C-A6B4-2C0DB7985AAE}"
 EndProject

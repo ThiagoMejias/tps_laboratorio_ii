@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "entidades/1.0.0": {
+      "Entidades/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/entidades.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         },
         "runtime": {
-          "bin/placeholder/entidades.dll": {}
+          "bin/placeholder/Entidades.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "entidades/1.0.0": {
+    "Entidades/1.0.0": {
       "type": "project",
-      "path": "../entidades/entidades.csproj",
-      "msbuildProject": "../entidades/entidades.csproj"
+      "path": "../entidades/Entidades.csproj",
+      "msbuildProject": "../entidades/Entidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "entidades >= 1.0.0"
+      "Entidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -52,8 +52,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj": {
-              "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj"
+            "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj"
             }
           }
         }

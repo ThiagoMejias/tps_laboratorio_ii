@@ -4,12 +4,12 @@
     "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj": {
+    "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj",
-        "projectName": "entidades",
-        "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
+        "projectName": "Entidades",
+        "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\obj\\",
         "projectStyle": "PackageReference",
@@ -80,8 +80,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj": {
-                "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj"
+              "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj"
               }
             }
           }
