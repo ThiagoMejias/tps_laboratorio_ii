@@ -84,15 +84,21 @@ namespace MiCalculadora
         /// </summary>
         /// <param name="num"></param>
         /// <returns>retorna el numero si es valido o 0</returns>
-        private string validarNumero(string num)
+        private double validarNumero(string num)
         {
-            string retorno;
-            retorno = num;
-            if (!double.TryParse(num, out double numero))
+            double retorno;
+            double numero;
+
+            if (!double.TryParse(num, out numero))
             {
-                retorno = "0";
+                retorno = 0;
             }
-            return retorno;
+            else
+            {
+                retorno = numero;
+
+            }
+            return numero;
         }
         /// <summary>
         /// limpia el form.
