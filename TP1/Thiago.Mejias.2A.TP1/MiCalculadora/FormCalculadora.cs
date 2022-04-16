@@ -156,7 +156,7 @@ namespace MiCalculadora
             lblResultado.Text = "0";
             txtNumero1.Text = "";
             txtNumero2.Text = "";
-            cmbOperador.Text = "";
+            this.cmbOperador.SelectedIndex = 0;
 
         }
         /// <summary>
