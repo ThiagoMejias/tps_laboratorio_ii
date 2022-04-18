@@ -65,7 +65,11 @@ namespace MiCalculadora
             if (operador == " ")
             {
                 operador = "+";
+
             }
+
+            txtNumero1.Text = txtNumero1.Text.Replace('.', ',');
+            txtNumero2.Text = txtNumero2.Text.Replace('.', ',');
             resultado = Operar(txtNumero1.Text, txtNumero2.Text, operador);
             if (resultado == double.MinValue)
             {
@@ -74,6 +78,8 @@ namespace MiCalculadora
             }
             else
             {
+
+
                 lblResultado.Text = resultado.ToString();
                 lstOperaciones.Items.Add(validarNumero(txtNumero1.Text) + operador + validarNumero(txtNumero2.Text) + "=" + resultado);
 
@@ -168,10 +174,11 @@ namespace MiCalculadora
         /// <returns>retorna el resultado de la operacion Calculadora.Operar</returns>
         private double Operar(string numero1, string numero2, string Operador)
         {
-            numero1 = numero1.Replace('.', ',');
-            numero2 = numero2.Replace('.', ',');
+
             return Math.Round(Calculadora.Operar(new Operando(numero1), new Operando(numero2), char.Parse(Operador)), 2);
 
         }
+
+        
     }
 }

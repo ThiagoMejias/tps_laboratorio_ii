@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj",
-      "projectName": "entidades",
-      "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
+      "projectName": "Entidades",
+      "projectPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
       "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\obj\\",
+      "outputPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",

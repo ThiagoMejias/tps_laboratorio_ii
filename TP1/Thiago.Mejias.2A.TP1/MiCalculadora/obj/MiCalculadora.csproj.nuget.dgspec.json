@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
+    "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
+    "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\obj\\",
+        "outputPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj": {
+    "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj",
         "projectName": "MiCalculadora",
-        "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj",
+        "projectPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\MiCalculadora\\MiCalculadora.csproj",
         "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\MiCalculadora\\obj\\",
+        "outputPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\MiCalculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -80,8 +80,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Thiago\\source\\repos\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj"
+              "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Thiago\\Desktop\\tps_laboratorio_ii\\TP1\\Thiago.Mejias.2A.TP1\\entidades\\Entidades.csproj"
               }
             }
           }
