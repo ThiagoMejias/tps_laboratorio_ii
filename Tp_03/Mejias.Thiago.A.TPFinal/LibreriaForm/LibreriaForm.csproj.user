@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="AgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DarDeBajaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListadoStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ListarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ModificacionClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
