@@ -1,24 +1,44 @@
-﻿namespace Entidades
+﻿using Entidades.Archivos;
+
+
+namespace Entidades
 {
     public class CajaDeVino
     {
-        string marca;
-        string tipo;
+        public enum Tipo
+        {
+            tinto, blanco, rosado, espumante
+        }
+
+        public Tipo tipo;
         public static int cantidadDeVinos;
 
+        public CajaDeVino()
+        {
+
+        }
         static CajaDeVino()
         {
             CajaDeVino.cantidadDeVinos = 6;
         }
-        public CajaDeVino(string marca, string tipo)
+        public CajaDeVino(Tipo tipo)
         {
-            this.marca = marca;
             this.tipo = tipo;
+        }
+
+        public static bool operator ==(CajaDeVino c1, CajaDeVino c2)
+        {
+
+            return c1 is not null && c2 is not null && c1.tipo == c2.tipo;
+        }
+        public static bool operator !=(CajaDeVino c1, CajaDeVino c2)
+        {
+            return !(c1 == c2);
         }
 
         public string Mostrar()
         {
-            return $"Marca: {this.marca} , Tipo:{this.tipo}";
+            return $"Tipo: {this.tipo}\n\n";
         }
 
         public override string ToString()

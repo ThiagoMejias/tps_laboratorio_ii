@@ -36,6 +36,7 @@ namespace LibreriaForm
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_ModificarCliente = new System.Windows.Forms.Button();
             this.btn_VerCantidadDeStock = new System.Windows.Forms.Button();
+            this.btn_Guardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_AgregarCliente
@@ -86,7 +87,7 @@ namespace LibreriaForm
             this.btn_Salir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Black;
-            this.btn_Salir.Location = new System.Drawing.Point(193, 352);
+            this.btn_Salir.Location = new System.Drawing.Point(193, 415);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(121, 57);
             this.btn_Salir.TabIndex = 3;
@@ -122,6 +123,20 @@ namespace LibreriaForm
             this.btn_VerCantidadDeStock.UseVisualStyleBackColor = false;
             this.btn_VerCantidadDeStock.Click += new System.EventHandler(this.btn_VerCantidadDeStock_Click);
             // 
+            // btn_Guardar
+            // 
+            this.btn_Guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(39)))), ((int)(((byte)(107)))));
+            this.btn_Guardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Guardar.ForeColor = System.Drawing.Color.Black;
+            this.btn_Guardar.Location = new System.Drawing.Point(193, 352);
+            this.btn_Guardar.Name = "btn_Guardar";
+            this.btn_Guardar.Size = new System.Drawing.Size(121, 57);
+            this.btn_Guardar.TabIndex = 6;
+            this.btn_Guardar.Text = "Guardar";
+            this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -129,7 +144,8 @@ namespace LibreriaForm
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.BackgroundImage = global::LibreriaForm.Properties.Resources.FONDO;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(511, 442);
+            this.ClientSize = new System.Drawing.Size(530, 488);
+            this.Controls.Add(this.btn_Guardar);
             this.Controls.Add(this.btn_VerCantidadDeStock);
             this.Controls.Add(this.btn_ModificarCliente);
             this.Controls.Add(this.btn_Salir);
@@ -143,6 +159,7 @@ namespace LibreriaForm
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.ResumeLayout(false);
 
@@ -156,5 +173,6 @@ namespace LibreriaForm
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_ModificarCliente;
         private System.Windows.Forms.Button btn_VerCantidadDeStock;
+        private System.Windows.Forms.Button btn_Guardar;
     }
 }

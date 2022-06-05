@@ -50,9 +50,10 @@ namespace LibreriaForm
             // 
             this.txt_dniABuscar.Location = new System.Drawing.Point(35, 107);
             this.txt_dniABuscar.Name = "txt_dniABuscar";
+            this.txt_dniABuscar.ShortcutsEnabled = false;
             this.txt_dniABuscar.Size = new System.Drawing.Size(157, 23);
             this.txt_dniABuscar.TabIndex = 0;
-            this.txt_dniABuscar.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_dniABuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_dniABuscar_KeyPress);
             // 
             // lbl_DniABuscar
             // 
@@ -67,23 +68,28 @@ namespace LibreriaForm
             // 
             this.txt_Nombre.Location = new System.Drawing.Point(373, 74);
             this.txt_Nombre.Name = "txt_Nombre";
+            this.txt_Nombre.ShortcutsEnabled = false;
             this.txt_Nombre.Size = new System.Drawing.Size(138, 23);
             this.txt_Nombre.TabIndex = 2;
+            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_KeyPress);
             // 
             // txt_Direccion
             // 
             this.txt_Direccion.Location = new System.Drawing.Point(572, 74);
             this.txt_Direccion.Name = "txt_Direccion";
+            this.txt_Direccion.ShortcutsEnabled = false;
             this.txt_Direccion.Size = new System.Drawing.Size(172, 23);
             this.txt_Direccion.TabIndex = 3;
-            this.txt_Direccion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+
             // 
             // txt_Dni
             // 
             this.txt_Dni.Location = new System.Drawing.Point(373, 161);
             this.txt_Dni.Name = "txt_Dni";
+            this.txt_Dni.ShortcutsEnabled = false;
             this.txt_Dni.Size = new System.Drawing.Size(138, 23);
             this.txt_Dni.TabIndex = 4;
+            this.txt_Dni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Dni_KeyPress);
             // 
             // dateTime_cliente
             // 
@@ -163,8 +169,10 @@ namespace LibreriaForm
             // 
             this.txt_deuda.Location = new System.Drawing.Point(572, 161);
             this.txt_deuda.Name = "txt_deuda";
+            this.txt_deuda.ShortcutsEnabled = false;
             this.txt_deuda.Size = new System.Drawing.Size(172, 23);
             this.txt_deuda.TabIndex = 17;
+            this.txt_deuda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_deuda_KeyPress);
             // 
             // lbl_Deuda
             // 
@@ -197,6 +205,8 @@ namespace LibreriaForm
             this.Controls.Add(this.txt_Nombre);
             this.Controls.Add(this.lbl_DniABuscar);
             this.Controls.Add(this.txt_dniABuscar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ModificacionClientes";
             this.Text = "ModificacionClientes";
             this.Load += new System.EventHandler(this.ModificacionClientes_Load);

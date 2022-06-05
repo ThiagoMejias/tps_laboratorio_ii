@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListadoOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <lista>
+    <Cliente>
+      <Dni>44628123</Dni>
+      <NombreCompleto>Catalina Klemen</NombreCompleto>
+      <Direccion>calle 59 460</Direccion>
+      <FechaDeNacimiento>2003-02-09T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>44816634</Dni>
+      <NombreCompleto>Thiago Mejias</NombreCompleto>
+      <Direccion>Inclan 3541</Direccion>
+      <FechaDeNacimiento>2003-04-24T00:00:00</FechaDeNacimiento>
+      <Deuda>55</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>91420</Dni>
+      <NombreCompleto>Jose maria</NombreCompleto>
+      <Direccion>juend 23</Direccion>
+      <FechaDeNacimiento>1999-07-01T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+  </lista>
+</ListadoOfCliente>

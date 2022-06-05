@@ -17,7 +17,11 @@ namespace Entidades
         }
 
         public int Cantidad { get { return lista.Count(); } }
-
+        /// <summary>
+        /// Añade, si no esta en la lista, un objeto del tipo T.
+        /// </summary>
+        /// <param name="obj">Obketo a agregar</param>
+        /// <returns>retorna trie si se pudo o false si no</returns>
         public bool add(T obj)
         {
             bool retorno = false;
@@ -36,6 +40,11 @@ namespace Entidades
             }
             return retorno;
         }
+        /// <summary>
+        /// Elimina, si esta en la lista, un objeto del tipo T
+        /// </summary>
+        /// <param name="obj">Objeto a eliminar</param>
+        /// <returns>retorna true si pudo o false si no</returns>
         public bool Remove(T obj)
         {
             bool retorno = false;
@@ -55,6 +64,12 @@ namespace Entidades
             return retorno;
 
         }
+        /// <summary>
+        /// Verifica si esta en la lista que se paso por parametro 
+        /// </summary>
+        /// <param name="l">Lista en la que se busca si esta</param>
+        /// <param name="obj">objeto a buscar</param>
+        /// <returns>retorna true si esta o false si no</returns>
         public bool EstaEnLaLista(List<T> l, T obj)
         {
             if (l is not null && obj is not null)

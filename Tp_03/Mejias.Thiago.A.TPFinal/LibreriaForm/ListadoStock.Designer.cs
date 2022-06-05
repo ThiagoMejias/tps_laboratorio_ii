@@ -31,14 +31,13 @@ namespace LibreriaForm
         {
             this.lbl_Stock = new System.Windows.Forms.Label();
             this.rtx_Cajas = new System.Windows.Forms.RichTextBox();
-            this.txt_Tipo = new System.Windows.Forms.TextBox();
             this.lbl_Tipo = new System.Windows.Forms.Label();
-            this.lbl_Marca = new System.Windows.Forms.Label();
-            this.txt_Marca = new System.Windows.Forms.TextBox();
             this.txt_Cantidad = new System.Windows.Forms.TextBox();
             this.lbl_Cantidad = new System.Windows.Forms.Label();
             this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Cerrar = new System.Windows.Forms.Button();
+            this.cmb_Tipo = new System.Windows.Forms.ComboBox();
+            this.btn_Borrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Stock
@@ -52,53 +51,33 @@ namespace LibreriaForm
             this.lbl_Stock.Size = new System.Drawing.Size(69, 21);
             this.lbl_Stock.TabIndex = 0;
             this.lbl_Stock.Text = "adasd";
-            this.lbl_Stock.Click += new System.EventHandler(this.lbl_Stock_Click);
+
             // 
             // rtx_Cajas
             // 
-            this.rtx_Cajas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
+            this.rtx_Cajas.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.rtx_Cajas.Location = new System.Drawing.Point(436, 24);
             this.rtx_Cajas.Name = "rtx_Cajas";
+            this.rtx_Cajas.ReadOnly = true;
             this.rtx_Cajas.Size = new System.Drawing.Size(352, 194);
             this.rtx_Cajas.TabIndex = 1;
             this.rtx_Cajas.Text = "";
-            // 
-            // txt_Tipo
-            // 
-            this.txt_Tipo.Location = new System.Drawing.Point(34, 239);
-            this.txt_Tipo.Name = "txt_Tipo";
-            this.txt_Tipo.Size = new System.Drawing.Size(100, 23);
-            this.txt_Tipo.TabIndex = 2;
+
             // 
             // lbl_Tipo
             // 
             this.lbl_Tipo.AutoSize = true;
-            this.lbl_Tipo.Location = new System.Drawing.Point(34, 203);
+            this.lbl_Tipo.Location = new System.Drawing.Point(12, 203);
             this.lbl_Tipo.Name = "lbl_Tipo";
             this.lbl_Tipo.Size = new System.Drawing.Size(30, 15);
             this.lbl_Tipo.TabIndex = 3;
             this.lbl_Tipo.Text = "Tipo";
             // 
-            // lbl_Marca
-            // 
-            this.lbl_Marca.AutoSize = true;
-            this.lbl_Marca.Location = new System.Drawing.Point(187, 203);
-            this.lbl_Marca.Name = "lbl_Marca";
-            this.lbl_Marca.Size = new System.Drawing.Size(40, 15);
-            this.lbl_Marca.TabIndex = 4;
-            this.lbl_Marca.Text = "Marca";
-            // 
-            // txt_Marca
-            // 
-            this.txt_Marca.Location = new System.Drawing.Point(187, 239);
-            this.txt_Marca.Name = "txt_Marca";
-            this.txt_Marca.Size = new System.Drawing.Size(100, 23);
-            this.txt_Marca.TabIndex = 5;
-            // 
             // txt_Cantidad
             // 
-            this.txt_Cantidad.Location = new System.Drawing.Point(344, 239);
+            this.txt_Cantidad.Location = new System.Drawing.Point(167, 239);
             this.txt_Cantidad.Name = "txt_Cantidad";
+            this.txt_Cantidad.ShortcutsEnabled = false;
             this.txt_Cantidad.Size = new System.Drawing.Size(100, 23);
             this.txt_Cantidad.TabIndex = 6;
             this.txt_Cantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Cantidad_KeyPress);
@@ -106,7 +85,7 @@ namespace LibreriaForm
             // lbl_Cantidad
             // 
             this.lbl_Cantidad.AutoSize = true;
-            this.lbl_Cantidad.Location = new System.Drawing.Point(344, 203);
+            this.lbl_Cantidad.Location = new System.Drawing.Point(167, 203);
             this.lbl_Cantidad.Name = "lbl_Cantidad";
             this.lbl_Cantidad.Size = new System.Drawing.Size(55, 15);
             this.lbl_Cantidad.TabIndex = 7;
@@ -114,7 +93,7 @@ namespace LibreriaForm
             // 
             // btn_Agregar
             // 
-            this.btn_Agregar.Location = new System.Drawing.Point(34, 358);
+            this.btn_Agregar.Location = new System.Drawing.Point(14, 335);
             this.btn_Agregar.Name = "btn_Agregar";
             this.btn_Agregar.Size = new System.Drawing.Size(119, 49);
             this.btn_Agregar.TabIndex = 8;
@@ -132,6 +111,27 @@ namespace LibreriaForm
             this.btn_Cerrar.UseVisualStyleBackColor = true;
             this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
             // 
+            // cmb_Tipo
+            // 
+            this.cmb_Tipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmb_Tipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Tipo.FormattingEnabled = true;
+            this.cmb_Tipo.Location = new System.Drawing.Point(12, 239);
+            this.cmb_Tipo.Name = "cmb_Tipo";
+            this.cmb_Tipo.Size = new System.Drawing.Size(121, 23);
+            this.cmb_Tipo.TabIndex = 10;
+            // 
+            // btn_Borrar
+            // 
+            this.btn_Borrar.Location = new System.Drawing.Point(167, 335);
+            this.btn_Borrar.Name = "btn_Borrar";
+            this.btn_Borrar.Size = new System.Drawing.Size(119, 49);
+            this.btn_Borrar.TabIndex = 11;
+            this.btn_Borrar.Text = "Eliminar";
+            this.btn_Borrar.UseVisualStyleBackColor = true;
+            this.btn_Borrar.Click += new System.EventHandler(this.btn_Borrar_Click);
+            // 
             // ListadoStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -139,16 +139,17 @@ namespace LibreriaForm
             this.BackgroundImage = global::LibreriaForm.Properties.Resources.FONDO;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Borrar);
+            this.Controls.Add(this.cmb_Tipo);
             this.Controls.Add(this.btn_Cerrar);
             this.Controls.Add(this.btn_Agregar);
             this.Controls.Add(this.lbl_Cantidad);
             this.Controls.Add(this.txt_Cantidad);
-            this.Controls.Add(this.txt_Marca);
-            this.Controls.Add(this.lbl_Marca);
             this.Controls.Add(this.lbl_Tipo);
-            this.Controls.Add(this.txt_Tipo);
             this.Controls.Add(this.rtx_Cajas);
             this.Controls.Add(this.lbl_Stock);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ListadoStock";
             this.Text = "ListadoStock";
             this.Load += new System.EventHandler(this.ListadoStock_Load);
@@ -161,13 +162,12 @@ namespace LibreriaForm
 
         private System.Windows.Forms.Label lbl_Stock;
         private System.Windows.Forms.RichTextBox rtx_Cajas;
-        private System.Windows.Forms.TextBox txt_Tipo;
         private System.Windows.Forms.Label lbl_Tipo;
-        private System.Windows.Forms.Label lbl_Marca;
-        private System.Windows.Forms.TextBox txt_Marca;
         private System.Windows.Forms.TextBox txt_Cantidad;
         private System.Windows.Forms.Label lbl_Cantidad;
         private System.Windows.Forms.Button btn_Agregar;
         private System.Windows.Forms.Button btn_Cerrar;
+        private System.Windows.Forms.ComboBox cmb_Tipo;
+        private System.Windows.Forms.Button btn_Borrar;
     }
 }

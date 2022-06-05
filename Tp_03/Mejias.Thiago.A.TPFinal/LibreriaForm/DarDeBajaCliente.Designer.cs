@@ -41,6 +41,7 @@ namespace LibreriaForm
             // 
             this.txt_buscarPorDni.Location = new System.Drawing.Point(29, 71);
             this.txt_buscarPorDni.Name = "txt_buscarPorDni";
+            this.txt_buscarPorDni.ShortcutsEnabled = false;
             this.txt_buscarPorDni.Size = new System.Drawing.Size(156, 23);
             this.txt_buscarPorDni.TabIndex = 0;
             this.txt_buscarPorDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_buscarPorDni_KeyPress);
@@ -53,7 +54,6 @@ namespace LibreriaForm
             this.lbl_BuscarPorDni.Size = new System.Drawing.Size(84, 15);
             this.lbl_BuscarPorDni.TabIndex = 1;
             this.lbl_BuscarPorDni.Text = "Buscar Por Dni";
-            this.lbl_BuscarPorDni.Click += new System.EventHandler(this.label1_Click);
             // 
             // rtb_Cliente
             // 
@@ -108,6 +108,8 @@ namespace LibreriaForm
             this.Controls.Add(this.lbl_BuscarPorDni);
             this.Controls.Add(this.txt_buscarPorDni);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "DarDeBajaCliente";
             this.Text = "DarDeBajaCliente";
             this.Load += new System.EventHandler(this.DarDeBajaCliente_Load);

@@ -54,6 +54,7 @@ namespace LibreriaForm
             // 
             this.txt_Dni.Location = new System.Drawing.Point(51, 166);
             this.txt_Dni.Name = "txt_Dni";
+            this.txt_Dni.ShortcutsEnabled = false;
             this.txt_Dni.Size = new System.Drawing.Size(220, 23);
             this.txt_Dni.TabIndex = 3;
             this.txt_Dni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Dni_KeyPress);
@@ -71,6 +72,7 @@ namespace LibreriaForm
             // 
             this.txt_direccion.Location = new System.Drawing.Point(474, 85);
             this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.ShortcutsEnabled = false;
             this.txt_direccion.Size = new System.Drawing.Size(220, 23);
             this.txt_direccion.TabIndex = 6;
             // 
@@ -124,6 +126,7 @@ namespace LibreriaForm
             // 
             this.txt_nombre.Location = new System.Drawing.Point(51, 85);
             this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.ShortcutsEnabled = false;
             this.txt_nombre.Size = new System.Drawing.Size(220, 23);
             this.txt_nombre.TabIndex = 0;
             this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);

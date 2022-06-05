@@ -30,57 +30,30 @@ namespace LibreriaForm
         private void InitializeComponent()
         {
             this.dgv_Clientes = new System.Windows.Forms.DataGridView();
-            this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MontoAPagar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Clientes)).BeginInit();
             this.SuspendLayout();
             // 
             // dgv_Clientes
             // 
+            this.dgv_Clientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(0)))), ((int)(((byte)(21)))));
             this.dgv_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_Clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Dni,
-            this.Nombre,
-            this.Direccion,
-            this.MontoAPagar});
-            this.dgv_Clientes.Location = new System.Drawing.Point(147, 12);
+            this.dgv_Clientes.Location = new System.Drawing.Point(87, 12);
             this.dgv_Clientes.Name = "dgv_Clientes";
+            this.dgv_Clientes.ReadOnly = true;
             this.dgv_Clientes.RowTemplate.Height = 25;
-            this.dgv_Clientes.Size = new System.Drawing.Size(429, 150);
+            this.dgv_Clientes.Size = new System.Drawing.Size(540, 370);
             this.dgv_Clientes.TabIndex = 0;
-            // 
-            // Dni
-            // 
-            this.Dni.HeaderText = "Dni";
-            this.Dni.Name = "Dni";
-            this.Dni.ReadOnly = true;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.ReadOnly = true;
-            // 
-            // MontoAPagar
-            // 
-            this.MontoAPagar.HeaderText = "Monto A Pagar";
-            this.MontoAPagar.Name = "MontoAPagar";
-            this.MontoAPagar.ReadOnly = true;
             // 
             // ListarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::LibreriaForm.Properties.Resources.FONDO;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(742, 394);
             this.Controls.Add(this.dgv_Clientes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ListarClientes";
             this.Text = "ListarClientes";
             this.Load += new System.EventHandler(this.ListarClientes_Load);
@@ -92,9 +65,5 @@ namespace LibreriaForm
         #endregion
 
         private System.Windows.Forms.DataGridView dgv_Clientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dni;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MontoAPagar;
     }
 }

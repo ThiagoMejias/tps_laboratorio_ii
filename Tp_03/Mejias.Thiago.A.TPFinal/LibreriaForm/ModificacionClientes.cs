@@ -23,15 +23,16 @@ namespace LibreriaForm
             this.bacos = bacos;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ModificacionClientes_Load(object sender, EventArgs e)
         {
             todoBien = false;
         }
+
+        /// <summary>
+        /// Si esta todo bien se modifica el cliente seleccionado.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Modificar_Click(object sender, EventArgs e)
         {
             if (todoBien)
@@ -39,25 +40,29 @@ namespace LibreriaForm
                 try
                 {
 
-                    if (string.IsNullOrEmpty(txt_Dni.Text) || string.IsNullOrEmpty(txt_Nombre.Text) || string.IsNullOrEmpty(txt_Direccion.Text) || string.IsNullOrEmpty(txt_deuda.Text))
+
+                    if (string.IsNullOrEmpty(txt_Dni.Text) || string.IsNullOrEmpty(txt_Nombre.Text) || string.IsNullOrEmpty(txt_Direccion.Text) || string.IsNullOrWhiteSpace(txt_Direccion.Text) || string.IsNullOrWhiteSpace(txt_Dni.Text) || string.IsNullOrWhiteSpace(txt_Nombre.Text) || string.IsNullOrWhiteSpace(txt_Dni.Text))
                     {
-                        throw new EstaVacioException("No pueden quedar campos vacios");
+                        new EstaVacioException("No pueden quedar campos vacios");
                     }
+
                     if (dateTime_cliente.Value.AddYears(18) > DateTime.Today)
                     {
-                        throw new EsMenorException("Se debe ser mayor de edad");
+                        new EsMenorException("Se debe ser mayor!");
+
                     }
+
                     if (int.Parse(this.txt_Dni.Text) != aux.Dni && bacos.existeCliente(int.Parse(txt_Dni.Text)))
                     {
-                        throw new EstaOnoEnlalista("Ya existe un cliente registrado con ese dni");
+                        MessageBox.Show("Ya existe un cliente registrado con ese dni", "Cliente No encontrado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
+
                     aux.Dni = int.Parse(this.txt_Dni.Text);
                     aux.NombreCompleto = this.txt_Nombre.Text;
                     aux.FechaDeNacimiento = this.dateTime_cliente.Value;
                     aux.Direccion = this.txt_Direccion.Text;
                     aux.Deuda = float.Parse(this.txt_deuda.Text);
                     MessageBox.Show("Cliente modificado!", "Modificacion exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 }
                 catch (EstaVacioException ex)
                 {
@@ -90,27 +95,31 @@ namespace LibreriaForm
 
 
         }
+        /// <summary>
+        /// Busca el cliente indicado.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
-
             try
             {
                 if (string.IsNullOrEmpty(txt_dniABuscar.Text))
                 {
-                    throw new EstaVacioException("No se introducion ningun valor!");
-
-
+                    new EstaVacioException("No pueden quedar campos vacios");
                 }
-;
-                Cliente c = bacos.buscarCliente(int.Parse(this.txt_dniABuscar.Text));
+                else
+                {
+                    Cliente c = bacos.buscarCliente(int.Parse(this.txt_dniABuscar.Text));
 
-                this.txt_Dni.Text = c.Dni.ToString();
-                this.txt_Direccion.Text = c.Direccion;
-                this.txt_Nombre.Text = c.NombreCompleto;
-                this.txt_deuda.Text = c.Deuda.ToString();
-                this.dateTime_cliente.Value = c.FechaDeNacimiento;
-                todoBien = true;
-                aux = c;
+                    this.txt_Dni.Text = c.Dni.ToString();
+                    this.txt_Direccion.Text = c.Direccion;
+                    this.txt_Nombre.Text = c.NombreCompleto;
+                    this.txt_deuda.Text = c.Deuda.ToString();
+                    this.dateTime_cliente.Value = c.FechaDeNacimiento;
+                    todoBien = true;
+                    aux = c;
+                }
             }
             catch (NoExisteException ex)
             {
@@ -119,7 +128,7 @@ namespace LibreriaForm
             }
             catch (EstaVacioException ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.Message, "Cliente No encontrado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 todoBien = false;
             }
             catch (Exception)
@@ -129,14 +138,91 @@ namespace LibreriaForm
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+
+        private void txt_dniABuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se admiten datos numéricos", "validación Dni", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        private void txt_Dni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se admiten datos numéricos", "validación Dni", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void txt_deuda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se admiten datos numéricos", "validación Dni", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se admiten letras", "validación de texto",
+               MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
         }
     }
 }

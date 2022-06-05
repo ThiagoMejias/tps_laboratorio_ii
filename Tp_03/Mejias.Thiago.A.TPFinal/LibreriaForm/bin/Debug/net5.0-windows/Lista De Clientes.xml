@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListadoOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <lista>
+    <Cliente>
+      <Dni>44628123</Dni>
+      <NombreCompleto>Catalina Klemen</NombreCompleto>
+      <Direccion>calle 59 460</Direccion>
+      <FechaDeNacimiento>2003-02-09T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>44816634</Dni>
+      <NombreCompleto>Thiago Mejias</NombreCompleto>
+      <Direccion>Inclan 3541</Direccion>
+      <FechaDeNacimiento>2003-04-24T00:00:00</FechaDeNacimiento>
+      <Deuda>55</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>91420</Dni>
+      <NombreCompleto>Jose maria</NombreCompleto>
+      <Direccion>juend 23</Direccion>
+      <FechaDeNacimiento>1999-07-01T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>214598</Dni>
+      <NombreCompleto>Juan Ramirez</NombreCompleto>
+      <Direccion>Santa Fe 3232</Direccion>
+      <FechaDeNacimiento>1975-01-22T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>365944</Dni>
+      <NombreCompleto>Pia Perez</NombreCompleto>
+      <Direccion>Avenida Mitre 2344</Direccion>
+      <FechaDeNacimiento>1964-02-16T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>448264</Dni>
+      <NombreCompleto>Manuel Gonzalez</NombreCompleto>
+      <Direccion>Jose San Martin 456</Direccion>
+      <FechaDeNacimiento>1954-03-27T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+  </lista>
+</ListadoOfCliente>
