@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListadoOfCliente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <lista>
+    <Cliente>
+      <Dni>23458414</Dni>
+      <NombreCompleto>Juan Poux</NombreCompleto>
+      <Direccion>Saavedra 352</Direccion>
+      <FechaDeNacimiento>1945-02-16T00:00:00</FechaDeNacimiento>
+      <Deuda>600</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>27456259</Dni>
+      <NombreCompleto>Natalia Rodriguez</NombreCompleto>
+      <Direccion>Avellaneda 1095</Direccion>
+      <FechaDeNacimiento>1981-03-07T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>27865425</Dni>
+      <NombreCompleto>Juan Ramirez</NombreCompleto>
+      <Direccion>Santa Fe 233</Direccion>
+      <FechaDeNacimiento>1995-01-02T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>40102005</Dni>
+      <NombreCompleto>Martin Rivera</NombreCompleto>
+      <Direccion>Corrientes 222</Direccion>
+      <FechaDeNacimiento>1984-07-22T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>44628123</Dni>
+      <NombreCompleto>Catalina Klemen</NombreCompleto>
+      <Direccion>Inclan 3541</Direccion>
+      <FechaDeNacimiento>2003-02-09T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+    <Cliente>
+      <Dni>44816634</Dni>
+      <NombreCompleto>Thiago Mejias</NombreCompleto>
+      <Direccion>Inclan 3541</Direccion>
+      <FechaDeNacimiento>2003-04-24T00:00:00</FechaDeNacimiento>
+      <Deuda>0</Deuda>
+    </Cliente>
+  </lista>
+</ListadoOfCliente>
