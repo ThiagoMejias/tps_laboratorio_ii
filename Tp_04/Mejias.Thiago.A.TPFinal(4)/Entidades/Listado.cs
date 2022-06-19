@@ -90,11 +90,8 @@ namespace Entidades
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("");
-            foreach (T item in this.lista)
-            {
+            this.lista.ForEach((x) => sb.Append(x.ToString()));
 
-                sb.Append(item.ToString());
-            }
             return sb.ToString();
         }
 

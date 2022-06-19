@@ -89,8 +89,14 @@ namespace LibreriaForm
         private async void cargarDatosClientes()
         {
             try
+
             {
-                this.bacos.clientes.lista = await Task.Run<List<Cliente>>(ClienteDao.Leer);
+                //Simulo que tarda en buscar a la base de datos.
+                this.bacos.clientes.lista = await Task.Run<List<Cliente>>(() =>
+                {
+                    Thread.Sleep(3000);
+                    return ClienteDao.Leer();
+                });
                 if (this.bacos.clientes.Cantidad < 1)
                 {
                     MessageBox.Show("No se pudieron cargar los archivos de la base de datos. Se cargaron los archivos locales!");

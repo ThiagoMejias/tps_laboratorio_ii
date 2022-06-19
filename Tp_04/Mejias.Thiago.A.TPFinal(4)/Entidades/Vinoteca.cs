@@ -75,12 +75,14 @@ namespace Entidades
         /// <param name="tipo">Enum del tipo de caja de vino a borrar</param>
         public void eliminarPorTipo(CajaDeVino.Tipo tipo)
         {
-            foreach (CajaDeVino item in cajas.lista)
             {
-                if (item.tipo == tipo)
+                foreach (CajaDeVino item in cajas.lista)
                 {
-                    cajas.lista.Remove(item);
-                    break;
+                    if (item.tipo == tipo)
+                    {
+                        cajas.lista.Remove(item);
+                        break;
+                    }
                 }
             }
         }

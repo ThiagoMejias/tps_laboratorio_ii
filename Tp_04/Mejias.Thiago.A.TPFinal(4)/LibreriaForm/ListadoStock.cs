@@ -86,8 +86,8 @@ namespace LibreriaForm
                 for (int i = 0; i < int.Parse(txt_Cantidad.Text); i++)
                 {
                     this.bacos.cajas.add(new CajaDeVino(tipo));
-
                 }
+
                 rtx_Cajas.Text = bacos.ListarPorTipo();
             }
 
@@ -134,10 +134,12 @@ namespace LibreriaForm
                     throw new NumeroInvalidoException("La cantidad a eliminar supera las cajas en stock");
                 }
 
+
                 for (int i = 0; i < int.Parse(txt_Cantidad.Text); i++)
                 {
                     bacos.eliminarPorTipo(tipoSeleccionado);
                 }
+
                 rtx_Cajas.Text = bacos.ListarPorTipo();
             }
 

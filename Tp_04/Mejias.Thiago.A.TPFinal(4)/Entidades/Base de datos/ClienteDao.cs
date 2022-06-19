@@ -33,7 +33,7 @@ namespace Entidades.Base_de_datos
         /// <returns>retorna una lista de clientes con la informacion de la base de datos</returns>
         public static List<Cliente> Leer()
         {
-            Thread.Sleep(3000);
+
             List<Cliente> lista = new List<Cliente>();
 
             try
